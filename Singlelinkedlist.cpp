@@ -16,7 +16,7 @@ class LinkedList
     Node *START;
 
 public:
-    LingkedList()
+    LinkedList()
     {
         START = NULL;
     }
@@ -47,7 +47,7 @@ public:
 
         while ((current != NULL) && (nim >= current->noMhs))
         {
-            if (nim == curren->noMhs)
+            if (nim == current->noMhs)
             {
                 cout << "\nDuplikasi noMhs tidak diijinkan\n";
                 return;
@@ -125,7 +125,7 @@ int main()
       cout << "1. Menambah data kedalam list" << endl;
       cout << "2. Menghapus data dari dalam list" << endl;
       cout << "3. Menampilkan semua data didalam list" << endl;
-      cour << "4. Mencari data dalam list" << endl;
+      cout << "4. Mencari data dalam list" << endl;
       cout << "5. Keluar" << endl;
       cout << endl 
         << "Masukkan pilihan (1-5): ";
@@ -180,14 +180,20 @@ int main()
             {
                 cout << endl
                     << "Data ditemukan" << endl;
-                cout << "\nNo Mahasiswa: " << curren->noMhs << endl;
+                cout << "\nNo Mahasiswa: " << current->noMhs << endl;
                 cout << "\n";
             }
         }
-      }
-      breakl;
-      
-    
-    } 
-    
+        break;
+        case '5':
+        {
+        }
+        break;
+        default:
+        {
+          cout << "Pilihan salah !." << endl;
+        }
+        break;
+        }     
+    } while (ch != '5'); 
 }
