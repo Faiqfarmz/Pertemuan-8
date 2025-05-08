@@ -176,8 +176,16 @@ int main()
             if (mhs.Search(nim, &previous, &current) == false)
                 cout << endl
                     << "Data tidak ditemukan" << endl;
+            else
+            {
+                cout << endl
+                    << "Data ditemukan" << endl;
+                cout << "\nNo Mahasiswa: " << curren->noMhs << endl;
+                cout << "\n";
+            }
         }
       }
+      breakl;
       
     
     } 
