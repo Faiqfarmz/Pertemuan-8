@@ -169,6 +169,13 @@ int main()
                 cout << "\nList Kosong\n";
                 break;
             }
+            Node *previous, *current;
+            cout << endl
+                << "Masukkan no mahsiswa yang dicari : ";
+            cin >> nim;
+            if (mhs.Search(nim, &previous, &current) == false)
+                cout << endl
+                    << "Data tidak ditemukan" << endl;
         }
       }
       
